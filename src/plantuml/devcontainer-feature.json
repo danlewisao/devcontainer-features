@@ -1,6 +1,6 @@
 {
     "name": "PlantUML",
-    "id": "ao.ade.plantuml",
+    "id": "plantuml",
     "version": "0.0.1",
     "description": "Installs PlantUML using the official Ubuntu/Debian package."
 }

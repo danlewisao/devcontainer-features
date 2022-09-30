@@ -1,6 +1,6 @@
 {
     "name": "PlantUML (light)",
-    "id": "ao.ade.pandoc-light",
+    "id": "pandoc-light",
     "version": "0.0.1",
     "description": "Install PlantUML via download scripts to reduce overall image size"
 }
