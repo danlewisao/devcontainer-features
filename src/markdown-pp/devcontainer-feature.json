@@ -1,0 +1,7 @@
+{
+    "name": "Markdown Pre-processor",
+    "id": "markdown-pp",
+    "version": "0.0.1",
+    "description": "Installs the Markdown Pre-processor pip package",
+    "installAfter": [ "ghcr.io/devcontainers/features/python", "devcontainers/features/python", "python"]
+}
