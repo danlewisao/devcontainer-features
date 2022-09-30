@@ -1,7 +1,7 @@
 {
     "name": "Copier",
     "id": "copier",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Installs the Copier pipx package to allow template generation",
     "installAfter": [ "devcontainers/features/python" ]
 }

@@ -37,6 +37,6 @@ su ${USERNAME} -c "which python > /tmp/copier-debug.txt"
 su ${USERNAME} -c "which pip >> /tmp/copier-debug.txt"
 su ${USERNAME} -c "which pipx >> /tmp/copier-debug.txt"
 su ${USERNAME} -c "whoami >> /tmp/copier-debug.txt"
-su ${USERNAME} -c "$(which pipx) install copier" || exit 0
+# su ${USERNAME} -c "$(which pipx) install copier" || exit 0
 
 echo "Done!"
