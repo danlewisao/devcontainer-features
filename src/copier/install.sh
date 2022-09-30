@@ -31,7 +31,6 @@ elif [ "${USERNAME}" = "none" ] || ! id -u ${USERNAME} > /dev/null 2>&1; then
     USERNAME=root
 fi
 
-# su ${USERNAME} -c "pipx install copier"
-echo "Feature not currenlty working"
+su ${USERNAME} -c "pip install --user pipx && pipx install copier"
 
 echo "Done!"
