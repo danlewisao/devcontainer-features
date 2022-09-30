@@ -1,15 +1,24 @@
 
-# Copier
+# Copier (copier)
 
-Install the [Copier](https://github.com/copier-org/copier) templating engine to allow quick and easy provisioning of
-architecture as code documents.
+Installs the Copier pipx package to allow template generation
 
 ## Example Usage
 
 ```json
 "features": {
-        "ghcr.io/danlewisao/devcontainer-features/ao.ade.copier": {
+        "ghcr.io/danlewisao/devcontainer-features/copier:0": {
             "version": "latest"
         }
 }
 ```
+
+## Options
+
+
+
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/danlewisao/devcontainer-features/blob/main/src/copier/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
