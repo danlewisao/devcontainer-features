@@ -1,13 +1,13 @@
 
-# My Favorite Color (color)
+# PlantUML (light) (pandoc-light)
 
-A feature to remind you of your favorite color
+Install PlantUML via download scripts to reduce overall image size
 
 ## Example Usage
 
 ```json
 "features": {
-        "ghcr.io/devcontainers/feature-template/color:1": {
+        "ghcr.io/danlewisao/devcontainer-features/pandoc-light:0": {
             "version": "latest"
         }
 }
@@ -15,12 +15,10 @@ A feature to remind you of your favorite color
 
 ## Options
 
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| favorite | Choose your favorite color. | string | red |
+
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-template/blob/main/src/color/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/danlewisao/devcontainer-features/blob/main/src/plantuml-light/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
