@@ -1,15 +1,24 @@
 
-# PlantUML
+# PlantUML (plantuml)
 
-Install PlantUML and supporting dependencies to enable PlantUML VS Code extension, enhanced markdown previews and the
-Pandoc PlantUML filter.
+Installs PlantUML using the official Ubuntu/Debian package.
 
 ## Example Usage
 
 ```json
 "features": {
-        "ghcr.io/danlewisao/devcontainer-features/ao.ade.plantuml": {
+        "ghcr.io/danlewisao/devcontainer-features/plantuml:0": {
             "version": "latest"
         }
 }
 ```
+
+## Options
+
+
+
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/danlewisao/devcontainer-features/blob/main/src/plantuml/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
