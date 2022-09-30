@@ -1,7 +1,7 @@
 {
     "name": "Copier",
     "id": "copier",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Installs the Copier pipx package to allow template generation",
     "installAfter": [ "ghcr.io/devcontainers/features/python", "devcontainers/features/python", "python"]
 }

@@ -31,8 +31,8 @@ elif [ "${USERNAME}" = "none" ] || ! id -u ${USERNAME} > /dev/null 2>&1; then
     USERNAME=root
 fi
 
-# su ${USERNAME} -c "/usr/local/py-utils/bin/pipx install copier"
 su ${USERNAME} -c "echo hello > /tmp/hello.txt"
+su ${USERNAME} -c "pipx install copier"
 # su ${USERNAME} -c "which python > /tmp/copier-debug.txt"
 # su ${USERNAME} -c "which pip >> /tmp/copier-debug.txt"
 # su ${USERNAME} -c "which pipx >> /tmp/copier-debug.txt"
