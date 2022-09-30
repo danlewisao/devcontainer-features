@@ -2,5 +2,6 @@
     "name": "Copier",
     "id": "copier",
     "version": "0.0.1",
-    "description": "Installs the Copier pipx package to allow template generation"
+    "description": "Installs the Copier pipx package to allow template generation",
+    "installsAfter": ["python"]
 }
