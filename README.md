@@ -1,16 +1,12 @@
-# Dev Container Features: Self Authoring Template
+# Dev Container Features: AD&E POC/Example Features
 
-> This repo provides a starting point and example for creating your own custom [dev container features](), hosted for free on GitHub Container Registry.  The example in this repository follows the [**proposed**  dev container feature distribution specification](https://containers.dev/implementors/features-distribution/).  
->
-> The proposed specification is in its _finalization_ phase and is subject to change.  To provide feedback to the specification, please leave a comment [on spec issue #70](https://github.com/devcontainers/spec/issues/70).  For more broad feedback regarding dev container features, please see [spec issue #61](https://github.com/devcontainers/spec/issues/61).
+## Contents
 
-## Example Contents
+This repository contains a _collection_ of POC/Example features to assist with docs/architecture-as-code - `copier`, `pandoc`, `plantuml` and `plantuml-light`. 
 
-This repository contains a _collection_ of two features - `hello` and `color`. These features serve as simple feature implementations.  Each sub-section below shows a sample `devcontainer.json` alongside example usage of the feature.
+### `copier`
 
-### `hello`
-
-Running `hello` inside the built container will print the greeting provided to it via its `greeting` option.
+Install the copier templating engine to allow easy provisioning of files based on an existing template
 
 ```jsonc
 {
@@ -24,35 +20,17 @@ Running `hello` inside the built container will print the greeting provided to i
 ```
 
 ```bash
-$ hello
+$ copier gh:danlewisao/templates/arb .
 
-Hello, user.
-```
-
-### `color`
-
-Running `color` inside the built container will print your favorite color to standard out.
-
-```jsonc
-{
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    "features": {
-        "ghcr.io/devcontainers/feature-template/color:1": {
-            "favorite": "green"
-        }
-    }
-}
-```
-
-```bash
-$ color
-
-my favorite color is green
+Project name:
+etc...
 ```
 
 ## Repo and Feature Structure
 
-Similar to the [`devcontainers/features`](https://github.com/devcontainers/features) repo, this repository has a `src` folder.  Each feature has its own sub-folder, containing at least a `devcontainer-feature.json` and an entrypoint script `install.sh`. 
+Similar to the [`devcontainers/features`](https://github.com/devcontainers/features) repo, this repository has a `src`
+folder. Each feature has its own sub-folder, containing at least a `devcontainer-feature.json` and an entrypoint script
+`install.sh`.
 
 ```
 ├── src
@@ -68,13 +46,18 @@ Similar to the [`devcontainers/features`](https://github.com/devcontainers/featu
 ...
 ```
 
-An [implementing tool](https://containers.dev/supporting#tools) will composite [the documented dev container properties](https://containers.dev/implementors/features/#devcontainer-feature-json-properties) from the feature's `devcontainer-feature.json` file, and execute in the `install.sh` entrypoint script in the container during build time.  Implementing tools are also free to process attributes under the `customizations` property as desired.
+An [implementing tool](https://containers.dev/supporting#tools) will composite [the documented dev container properties](https://containers.dev/implementors/features/#devcontainer-feature-json-properties)
+from the feature's `devcontainer-feature.json` file, and execute in the `install.sh` entrypoint script in the container
+during build time. Implementing tools are also free to process attributes under the `customizations` property as
+desired.
 
 ### Options
 
-All available options for a feature should be declared in the `devcontainer-feature.json`.  The syntax for the `options` property can be found in the [devcontainer feature json properties reference](https://containers.dev/implementors/features/#devcontainer-feature-json-properties).
+All available options for a feature should be declared in the `devcontainer-feature.json`. The syntax for the `options`
+property can be found in the [devcontainer feature json properties reference](https://containers.dev/implementors/features/#devcontainer-feature-json-properties).
 
-For example, the `color` feature provides an enum of three possible options (`red`, `gold`, `green`).  If no option is provided in a user's `devcontainer.json`, the value is set to "red".
+For example, the `color` feature provides an enum of three possible options (`red`, `gold`, `green`). If no option is
+provided in a user's `devcontainer.json`, the value is set to "red".
 
 ```jsonc
 {

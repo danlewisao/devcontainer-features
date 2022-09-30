@@ -1,0 +1,6 @@
+{
+    "name": "Pandoc",
+    "id": "ao.ade.pandoc",
+    "version": "1.0.3",
+    "description": "Pandoc, various Latex PDF Converters and the PlantUML pandoc filter."
+}

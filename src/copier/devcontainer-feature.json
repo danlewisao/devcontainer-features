@@ -1,0 +1,6 @@
+{
+    "name": "Copier",
+    "id": "ao.ade.copier",
+    "version": "0.0.1",
+    "description": "Installs the Copier pipx package to allow template generation"
+}
