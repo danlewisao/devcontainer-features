@@ -31,12 +31,7 @@ elif [ "${USERNAME}" = "none" ] || ! id -u ${USERNAME} > /dev/null 2>&1; then
     USERNAME=root
 fi
 
-su ${USERNAME} -c "echo hello > /tmp/hello.txt"
-su ${USERNAME} -c "pipx install copier"
-# su ${USERNAME} -c "which python > /tmp/copier-debug.txt"
-# su ${USERNAME} -c "which pip >> /tmp/copier-debug.txt"
-# su ${USERNAME} -c "which pipx >> /tmp/copier-debug.txt"
-# su ${USERNAME} -c "whoami >> /tmp/copier-debug.txt"
-# su ${USERNAME} -c "$(which pipx) install copier" || exit 0
+# su ${USERNAME} -c "pipx install copier"
+echo "Feature not currenlty working"
 
 echo "Done!"
